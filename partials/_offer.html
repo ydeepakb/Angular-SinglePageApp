@@ -1,0 +1,19 @@
+﻿<div class="col-md-1"></div>
+<div class="col-md-10">
+    <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          
+                <div class="row">
+                    <div ng-repeat="item in slide.imageList" class="col-md-4">
+                        <a href="#/portfolio-item.html">
+                            <img ng-src="{{item.image}}">
+                        </a>
+                        <h4>Slide {{item.name}}</h4>
+                    </div>
+                </div>
+          
+           
+        </slide>
+    </carousel>
+</div>
+<div class="col-md-1"></div>

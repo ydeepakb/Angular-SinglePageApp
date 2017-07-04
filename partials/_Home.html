@@ -1,0 +1,25 @@
+﻿<div id="slides_control" >
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <div>
+                        <div class="row">
+                            <div >
+                                <a href="#/portfolio-item.html">
+                                    <img ng-src="{{slide.image}}" >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<img ng-src="{{slide.image}}">-->
+                    <!--<div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>-->
+                </slide>
+            </carousel>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

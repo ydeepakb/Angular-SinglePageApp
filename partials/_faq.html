@@ -1,0 +1,27 @@
+﻿<div>
+    <div class="container">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" >
+            <div class="panel-group" ng-repeat="item in FAQDetails">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+                               href="" data-target="#collapse_{{$index}}">
+                                {{item.question}}
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse_{{$index}}" class="panel-collapse collapse">
+                        <div class="panel-body">
+                           {{item.answer}}
+                        </div>
+                    </div>
+                </div>
+           
+            </div>
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
